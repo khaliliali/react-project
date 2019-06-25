@@ -1,15 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 function Photo(props) {
-    const post = props.posts;
+    const post = props.post;
     return (
         <figure className="figure">
-            <img
-                className="photo"
-                src={post.imageLink}
-                alt={props.description}
-            />
+            <Link to={`/single/${post.id}`}>
+                <img
+                    className="photo"
+                    src={post.imageLink}
+                    alt={post.description}
+                />
+            </Link>
 
             <figcaption>
                 <p>{post.description}</p>
@@ -18,19 +21,28 @@ function Photo(props) {
                 <button
                     className="remove-button"
                     onClick={() => {
-                        props.onRemovePhoto(post);
+                        props.removePost(props.index);
+                        props.history.push('/');
                     }}
                 >
                     Remove
                 </button>
+                <Link className="button" to={`/single/${post.id}`}>
+                    <div className="comment-count">
+                        <div className="speech-bubble" />
+                        {props.comments[post.id]
+                            ? props.comments[post.id].length
+                            : 0}
+                    </div>
+                </Link>
             </div>
         </figure>
     );
 }
 
 Photo.propTypes = {
-    posts: PropTypes.object.isRequired,
-    onRemovePhoto: PropTypes.func.isRequired
+    post: PropTypes.object.isRequired
+    // onRemovePhoto: PropTypes.func.isRequired
 };
 
 export default Photo;
