@@ -223,6 +223,12 @@ button:focus,
     justify-content: center;
     font-size: 28pt;
 }
+.photo_top_title {
+    padding-top: 80px;
+}
+.photo_top_title:hover {
+    text-decoration: none !important;
+}
 
 /* blog session */
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from './components/Nav/Navbar';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import { createStore } from 'redux';
 import rootReducer from './redux/reducer';
 import { Provider } from 'react-redux';
@@ -17,10 +17,11 @@ class App extends Component {
                 <Provider store={store}>
                     <Navbar />
                     <BrowserRouter>
-                        <BlogPosts />
-                        {/* <PhApp /> */}
-                        <Footer />
+                        <Route path="/blog" component={BlogPosts} />
+                        <Route path="/photowall" component={PhApp} />
+                        <Route path="/" />
                     </BrowserRouter>
+                    <Footer />
                 </Provider>
             </React.Fragment>
         );

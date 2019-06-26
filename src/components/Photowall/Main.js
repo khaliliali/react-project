@@ -10,12 +10,12 @@ class Main extends Component {
     render() {
         return (
             <div>
-                <h1>
-                    <Link to="/">PhotoWall</Link>
+                <h1 className="photo_top_title">
+                    <Link to="/photowall">PhotoWall</Link>
                 </h1>
                 <Route
                     exact
-                    path="/"
+                    path="/photowall"
                     render={() => (
                         <div>
                             <Photowall {...this.props} />
@@ -24,13 +24,13 @@ class Main extends Component {
                 />
 
                 <Route
-                    path="/AddPhoto"
+                    path="/photowall/AddPhoto"
                     render={({ history }) => (
                         <AddPhoto {...this.props} onHistory={history} />
                     )}
                 />
                 <Route
-                    path="/single/:id"
+                    path="/photowall/single/:id"
                     render={params => <Single {...this.props} {...params} />}
                 />
             </div>

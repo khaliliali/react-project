@@ -3,7 +3,7 @@ import SearchBar from './SearchBar';
 
 const Navbar = () => {
     return (
-        <nav className="site-nav  navbar navbar-expand bg-dark flex-md-nowrap navbar-dark ">
+        <nav className="site-nav fixed-top  navbar navbar-expand bg-dark  navbar-dark ">
             <div className="container-fluid">
                 <div className="col-md-3 col-sm-3">
                     <a href="/" className="navbar-brand">
@@ -19,8 +19,8 @@ const Navbar = () => {
                         </a>
                     </li>
                     <li className="nav-item text-nowrap">
-                        <a className="nav-item nav-link" href="/meetings">
-                            meetings
+                        <a className="nav-item nav-link" href="/blog">
+                            Blog
                         </a>
                     </li>
                     <li className="nav-item text-nowrap">

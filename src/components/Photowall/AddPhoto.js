@@ -16,7 +16,7 @@ class AddPhoto extends Component {
         };
         if (imageDescription && imageLink) {
             this.props.addPost(post);
-            this.props.onHistory.push('/');
+            this.props.onHistory.push('/photowall');
         }
     }
     render() {

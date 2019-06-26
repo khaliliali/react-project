@@ -6,7 +6,7 @@ function Photo(props) {
     const post = props.post;
     return (
         <figure className="figure">
-            <Link to={`/single/${post.id}`}>
+            <Link to={`/photowall/single/${post.id}`}>
                 <img
                     className="photo"
                     src={post.imageLink}
@@ -22,12 +22,12 @@ function Photo(props) {
                     className="remove-button"
                     onClick={() => {
                         props.removePost(props.index);
-                        props.history.push('/');
+                        props.history.push('/photowall');
                     }}
                 >
                     Remove
                 </button>
-                <Link className="button" to={`/single/${post.id}`}>
+                <Link className="button" to={`/photowall/single/${post.id}`}>
                     <div className="comment-count">
                         <div className="speech-bubble" />
                         {props.comments[post.id]
