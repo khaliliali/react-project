@@ -3,14 +3,14 @@ import SearchBar from './SearchBar';
 
 const Navbar = () => {
     return (
-        <nav className="site-nav fixed-top  navbar navbar-expand bg-dark  navbar-dark ">
+        <nav className="site-nav navbar navbar-expand bg-dark  navbar-dark fixed-top">
             <div className="container-fluid">
                 <div className="col-md-3 col-sm-3">
                     <a href="/" className="navbar-brand">
                         React Project
                     </a>
                 </div>
-                <SearchBar />
+                {/* <SearchBar /> */}
 
                 <ul className="navbar-nav px-3">
                     <li className="nav-item text-nowrap">
@@ -24,8 +24,18 @@ const Navbar = () => {
                         </a>
                     </li>
                     <li className="nav-item text-nowrap">
-                        <a className="nav-item nav-link" href="/meetings">
-                            meetings
+                        <a className="nav-item nav-link" href="/gifs">
+                            Gifs
+                        </a>
+                    </li>
+                    <li className="nav-item text-nowrap">
+                        <a className="nav-item nav-link" href="/api">
+                            Blog (Api)
+                        </a>
+                    </li>
+                    <li className="nav-item text-nowrap">
+                        <a className="nav-item nav-link" href="/login">
+                            Log in
                         </a>
                     </li>
                 </ul>

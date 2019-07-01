@@ -7,6 +7,8 @@ import { Provider } from 'react-redux';
 import PhApp from './components/Photowall/PhApp';
 import BlogPosts from './components/Blog/BlogPosts';
 import Footer from './components/footer/footer';
+import Login from './components/Authorization/Login';
+import MainGif from './components/Gifs/MainGif';
 
 const store = createStore(rootReducer);
 
@@ -19,6 +21,8 @@ class App extends Component {
                     <BrowserRouter>
                         <Route path="/blog" component={BlogPosts} />
                         <Route path="/photowall" component={PhApp} />
+                        <Route path="/gifs" component={MainGif} />
+                        <Route path="/login" component={Login} />
                         <Route path="/" />
                     </BrowserRouter>
                     <Footer />

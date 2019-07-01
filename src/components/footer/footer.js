@@ -8,12 +8,21 @@ const Footer = () => {
                 All rights reserved.
             </div>
             <div className="socialmedia float-right">
-                <a className="fa fa-instagram m-1" href="http://google.com" />
+                <a
+                    className="fa fa-instagram m-1"
+                    href="http://google.com"
+                    target="_blank"
+                />
                 <a
                     className="fa fa-facebook-official m-1"
                     href="http://google.com"
+                    target="_blank"
                 />
-                <a className="fa fa-instagram m-1" href="http://google.com" />
+                <a
+                    className="fa fa-twitter m-1"
+                    href="http://google.com"
+                    target="_blank"
+                />
             </div>
         </footer>
     );

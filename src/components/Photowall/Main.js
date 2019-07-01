@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Title from './Title';
+// import Title from './Title';
 import Photowall from './PhotoWall';
 import AddPhoto from './AddPhoto';
 import { Route, Link } from 'react-router-dom';
-import { removePost } from '../../redux/actions';
+// import { removePost } from '../../redux/actions';
 import Single from './Single';
 
 class Main extends Component {
