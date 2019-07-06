@@ -40,7 +40,7 @@ export default class MainGif extends Component {
     performSearch = (query = 'dogs') => {
         axios
             .get(
-                `http://api.giphy.com/v1/stickers/search?q=${query}&limit=5&api_key=KNKk31Dmxd3i38k260NeeSQDBKlIXnVH`
+                `http://api.giphy.com/v1/stickers/search?q=${query}&limit=8&api_key=KNKk31Dmxd3i38k260NeeSQDBKlIXnVH`
             )
             .then(response => {
                 this.setState({
@@ -64,9 +64,23 @@ export default class MainGif extends Component {
                         <SearchForm onSearch={this.performSearch} />
                     </div>
                 </div>
-                <div className="main-content">
+                <div className="row ">
                     {this.state.loading ? (
-                        <p>Loading</p>
+                        <div className="container center">
+                            <div className=" preloader-wrapper active">
+                                <div className="spinner-layer spinner-red">
+                                    <div className="circle-clipper left">
+                                        <div className="circle" />
+                                    </div>
+                                    <div className="gap-patch">
+                                        <div className="circle" />
+                                    </div>
+                                    <div className="circle-clipper right">
+                                        <div className="circle" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     ) : (
                         <GifList data={this.state.gifs} />
                     )}

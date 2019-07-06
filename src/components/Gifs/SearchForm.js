@@ -14,19 +14,21 @@ class SearchForm extends Component {
     };
     render() {
         return (
-            <form className="search-form" onSubmit={this.handleSubmit}>
-                <label className="is-hidden" htmlFor="search">
-                    Search
-                </label>
-                <input
-                    type="search"
-                    onChange={this.onSearchChange}
-                    name="name"
-                    ref={input => (this.query = input)}
-                    placeholder="type sth..."
-                />
-                <button type="submit" id="submit" className="search-button" />
-            </form>
+            <div className="row">
+                <form
+                    className="search-form container"
+                    onSubmit={this.handleSubmit}
+                >
+                    <input
+                        style={{ color: 'green' }}
+                        type="search"
+                        onChange={this.onSearchChange}
+                        name="name"
+                        ref={input => (this.query = input)}
+                        placeholder="type sth..."
+                    />
+                </form>
+            </div>
         );
     }
 }

@@ -9,6 +9,7 @@ import BlogPosts from './components/Blog/BlogPosts';
 import Footer from './components/footer/footer';
 import Login from './components/Authorization/Login';
 import MainGif from './components/Gifs/MainGif';
+import MainNews from './components/News/MainNews';
 
 const store = createStore(rootReducer);
 
@@ -22,6 +23,7 @@ class App extends Component {
                         <Route path="/blog" component={BlogPosts} />
                         <Route path="/photowall" component={PhApp} />
                         <Route path="/gifs" component={MainGif} />
+                        <Route path="/news" component={MainNews} />
                         <Route path="/login" component={Login} />
                         <Route path="/" />
                     </BrowserRouter>

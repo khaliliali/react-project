@@ -29,8 +29,8 @@ const Navbar = () => {
                         </a>
                     </li>
                     <li className="nav-item text-nowrap">
-                        <a className="nav-item nav-link" href="/api">
-                            Blog (Api)
+                        <a className="nav-item nav-link" href="/news">
+                            News(Api)
                         </a>
                     </li>
                     <li className="nav-item text-nowrap">

@@ -13,7 +13,11 @@ const GifList = props => {
         gifs = <NoGifs />;
     }
 
-    return <ul className="photoGrid">{gifs}</ul>;
+    return (
+        <div className="col s4 card card-image">
+            <ul>{gifs}</ul>
+        </div>
+    );
 };
 
 export default GifList;
