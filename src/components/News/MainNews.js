@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NewsList from './NewsList';
 import SideNews from './SideNews';
+import SearchForm from '../Gifs/SearchForm';
 
 class MainNews extends Component {
     constructor(props) {
@@ -27,10 +28,26 @@ class MainNews extends Component {
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col s8">
+                            <div className="main-header">
+                                <div className="inner">
+                                    <h1 className="main-title">
+                                        Search Top Headlines
+                                    </h1>
+                                    {/* <SearchForm onSearch={this.performSearch} /> */}
+                                </div>
+                            </div>
                             <NewsList news={this.state.news1} />
                             <NewsList news={this.state.news2} />
                         </div>
                         <div className="col s4">
+                            <div className="main-header">
+                                <div className="inner">
+                                    <h1 className="main-title">
+                                        Search Everything
+                                    </h1>
+                                    {/* <SearchForm onSearch={this.performSearch} /> */}
+                                </div>
+                            </div>
                             <SideNews news={this.state.news3} />
                         </div>
                     </div>

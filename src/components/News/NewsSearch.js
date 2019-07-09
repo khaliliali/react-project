@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-class SearchForm extends Component {
+class NewsSearch extends Component {
     state = {
-        searchText: ''
+        searchNewsText: ''
     };
     onSearchChange = event => {
-        this.setState({ searchText: event.target.value });
+        this.setState({ searchNewsText: event.target.value });
     };
     handleSubmit = event => {
         event.preventDefault();
@@ -33,4 +33,4 @@ class SearchForm extends Component {
     }
 }
 
-export default SearchForm;
+export default NewsSearch;

@@ -14,27 +14,6 @@ export default class MainGif extends Component {
 
     componentDidMount() {
         this.performSearch();
-        // axios
-        //     .get(
-        //         `http://api.giphy.com/v1/gifs/trending?api_key=KNKk31Dmxd3i38k260NeeSQDBKlIXnVH`
-        //     )
-        //     .then(response => {
-        //         this.setState({ gifs: response.data.data });
-        //     })
-        //     .catch(error => {
-        //         console.log('Error ', error);
-        //     });
-        // ---------
-        // fetch(
-        //     `http://api.giphy.com/v1/gifs/trending?api_key=KNKk31Dmxd3i38k260NeeSQDBKlIXnVH`
-        // )
-        //     .then(response => response.json())
-        //     .then(responseData => {
-        //         this.setState({ gifs: responseData.data });
-        //     })
-        //     .catch(error => {
-        //         console.log('Error ', error);
-        //     });
     }
 
     performSearch = (query = 'dogs') => {
@@ -64,7 +43,7 @@ export default class MainGif extends Component {
                         <SearchForm onSearch={this.performSearch} />
                     </div>
                 </div>
-                <div className="row ">
+                <div className="row">
                     {this.state.loading ? (
                         <div className="container center">
                             <div className=" preloader-wrapper active">

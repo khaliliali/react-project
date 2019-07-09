@@ -2,3 +2,6 @@ git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/khaliliali/react-project.git
 git push -u origin master
+
+auth0: react-project-app
+main: arsiss.ir@gmail.com

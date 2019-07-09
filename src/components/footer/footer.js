@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer className="navbar navbar-dark fixed-bottom bg-dark col-md-12 ml-sm-auto col-lg-12 px-12 shadow">
+        <footer className="navbar navbar-dark fixed-bottom bg-dark col-md-12 ml-sm-auto col-lg-12 px-12 shadow ">
             <div className="copyright">
                 <span className="fa fa-copyright m-1" />
                 All rights reserved.
@@ -12,17 +12,26 @@ const Footer = () => {
                     className="fa fa-instagram m-1"
                     href="http://google.com"
                     target="_blank"
-                />
+                    rel="noopener noreferrer"
+                >
+                    .
+                </a>
                 <a
                     className="fa fa-facebook-official m-1"
                     href="http://google.com"
                     target="_blank"
-                />
+                    rel="noopener noreferrer"
+                >
+                    .
+                </a>
                 <a
                     className="fa fa-twitter m-1"
                     href="http://google.com"
                     target="_blank"
-                />
+                    rel="noopener noreferrer"
+                >
+                    .
+                </a>
             </div>
         </footer>
     );
