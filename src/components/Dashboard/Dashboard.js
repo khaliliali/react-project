@@ -8,9 +8,9 @@ class Home extends Component {
             <div className="photo_top_title">
                 <h1>Home</h1>
                 {isAuthenticated() ? (
-                    <Link to="/profile">View profile</Link>
+                    <Link to="/profile">Profile is here</Link>
                 ) : (
-                    <button onClick={login}>Log In</button>
+                    <button onClick={login}>Login</button>
                 )}
             </div>
         );
