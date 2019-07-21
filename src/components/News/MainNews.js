@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import NewsList from './NewsList';
 import SideNews from './SideNews';
-import SearchForm from '../Gifs/SearchForm';
+import { Card, CardText, Row, Col } from 'reactstrap';
+import './News.css';
 
 class MainNews extends Component {
     constructor(props) {
@@ -24,35 +25,20 @@ class MainNews extends Component {
 
     render() {
         return (
-            <div className="photo_top_title">
-                <div className="container-fluid">
-                    <div className="row">
-                        <div className="col s8">
-                            <div className="main-header">
-                                <div className="inner">
-                                    <h1 className="main-title">
-                                        Search Top Headlines
-                                    </h1>
-                                    {/* <SearchForm onSearch={this.performSearch} /> */}
-                                </div>
-                            </div>
-                            <NewsList news={this.state.news1} />
-                            <NewsList news={this.state.news2} />
-                        </div>
-                        <div className="col s4">
-                            <div className="main-header">
-                                <div className="inner">
-                                    <h1 className="main-title">
-                                        Search Everything
-                                    </h1>
-                                    {/* <SearchForm onSearch={this.performSearch} /> */}
-                                </div>
-                            </div>
-                            <SideNews news={this.state.news3} />
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <Row>
+                <Col sm="8">
+                    <CardText className="font">Top Headlines</CardText>
+                    <Card body>
+                        <NewsList news={this.state.news1} />
+                    </Card>
+                </Col>
+                <Col sm="4">
+                    <CardText className="font">Everything</CardText>
+                    <Card body>
+                        <SideNews news={this.state.news3} />
+                    </Card>
+                </Col>
+            </Row>
         );
     }
 }

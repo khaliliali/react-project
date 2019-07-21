@@ -5,12 +5,13 @@ import AddPhoto from './AddPhoto';
 import { Route, Link } from 'react-router-dom';
 // import { removePost } from '../../redux/actions';
 import Single from './Single';
+import './Photowall.css';
 
 class Main extends Component {
     render() {
         return (
             <div>
-                <h1 className="photo_top_title">
+                <h1>
                     <Link to="/photowall">PhotoWall</Link>
                 </h1>
                 <Route

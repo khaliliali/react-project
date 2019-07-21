@@ -1,14 +1,20 @@
 import React from 'react';
+import { Media, Button } from 'reactstrap';
 
 const SingleSide = ({ item }) => (
     <div>
-        <a href={item.url} target="_blank" rel="noopener noreferrer">
-            <div className="section">
-                <h5>{item.source.name}</h5>
+        <Media>
+            <Media body className="newsData">
+                <Media href={item.url} heading className="newstitle">
+                    {item.source.name}
+                </Media>
                 <div className="divider" />
-                <p>{item.title}</p>
-            </div>
-        </a>
+                <Media href={item.url} heading className="newsSummary">
+                    {item.description}
+                </Media>
+            </Media>
+        </Media>
+        <br />
     </div>
 );
 

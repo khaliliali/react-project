@@ -1,0 +1,46 @@
+.topheight {
+    margin-top: 20px;
+}
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover {
+    color: #fff !important;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fff !important;
+}
+
+.nav ul a:hover {
+    background-color: none;
+}
+
+.navbar {
+    height: 80px !important;
+}
+
+@media (max-width: 768px) {
+    .navbar-light .navbar-toggler-icon span {
+        background-image: red;
+    }
+    .navbar-light .navbar-toggler {
+        color: rgba(0, 0, 0, 0) !important;
+        border-color: rgba(0, 0, 0, 0) !important;
+    }
+    button:focus {
+        outline: none;
+        background-color: #fff0;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: #242424 !important;
+        z-index: 1 !important;
+        border-bottom: 1px solid #24242433 !important;
+    }
+    .navbar-nav {
+        background-color: #e6e6e6 !important;
+    }
+    .navbar-light .navbar-nav .nav-link,
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: #242424 !important;
+    }
+}

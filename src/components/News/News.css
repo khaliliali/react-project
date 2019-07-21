@@ -1,0 +1,65 @@
+@font-face {
+    font-family: yekan;
+    src: url('../../fonts/Yekan.eot') format('eot'),
+        url('../../fonts/Yekan.woff') format('woff'),
+        url('../../fonts/Yekan.ttf') format('truetype');
+}
+@font-face {
+    font-family: newfont;
+    src: url('../../fonts/bmifont.eot');
+    src: url('../../fonts/bmifont.eot') format('embedded-opentype'),
+        url('../../fonts/bmifont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'billabongregular';
+    src: url('https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.eot');
+    src: url('https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.eot?#iefix')
+            format('embedded-opentype'),
+        url('https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.woff')
+            format('woff'),
+        url('https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.ttf')
+            format('truetype'),
+        url('https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.svg#billabongregular')
+            format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.newstitle {
+    text-align: center !important;
+    font-family: yekan;
+    font-size: 18px;
+    color: #17a2b8;
+    font-weight: 700;
+}
+
+.newsData {
+    text-align: left !important;
+}
+
+.newsImage {
+    margin-right: 20px;
+    width: 480px;
+    height: 270px;
+    border: 1px gainsboro solid;
+}
+
+.newsSummary {
+    font-family: newfont;
+    margin: 10px;
+    padding: 8px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.font {
+    font-family: 'billabongregular';
+    text-align: center;
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 1rem 0;
+    letter-spacing: -1px;
+    color: black;
+    text-decoration: none;
+}

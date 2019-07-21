@@ -1,0 +1,73 @@
+@font-face {
+    font-family: yekan;
+    src: url('fonts/Yekan.eot') format('eot'),
+        url('fonts/Yekan.woff') format('woff'),
+        url('fonts/Yekan.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: newfont;
+    src: url('fonts/bmifont.eot');
+    src: url('fonts/bmifont.eot') format('embedded-opentype')
+        url('fonts/bmifont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'billabongregular';
+    src: url('https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.eot');
+    src: url('https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.eot?#iefix')
+            format('embedded-opentype'),
+        url('https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.woff')
+            format('woff'),
+        url('https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.ttf')
+            format('truetype'),
+        url('https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.svg#billabongregular')
+            format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.Branding {
+    font-family: 'Racing Sans One', cursive;
+}
+
+.App {
+    text-align: center;
+}
+
+.App-header {
+    background-color: #222;
+    height: 130px;
+    padding: 20px;
+    color: white;
+}
+
+.App-title {
+    font-size: 1.5em;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+.contentArea {
+    min-height: calc(90vh - 60px);
+}
+
+.navbar-toggler {
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    .navbar-toggler {
+        display: initial !important;
+    }
+}
